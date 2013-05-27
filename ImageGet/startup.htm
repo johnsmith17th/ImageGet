@@ -1,0 +1,7 @@
+﻿<script type="text/javascript">
+    var win = window.external.menuArguments;
+    var arg = win.event.srcElement.src;
+    var wsh = new ActiveXObject("WScript.Shell");
+    var myExe = "\"D:\\Develop\\ImageGet\\ImageGet\\bin\\Debug\\ImageGet.exe\" ";
+    wsh.run(myExe + arg, 8, false);
+</script>

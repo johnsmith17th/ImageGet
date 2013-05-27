@@ -1,0 +1,11 @@
+﻿<script type="text/javascript">
+    var win = window.external.menuArguments;
+    var img = win.event.srcElement.getElementsByTagName('img');
+    var arg = '';
+    for (var i = 0; i < img.length; i++) {
+        arg = arg + img[i].src + ' ';
+    }
+    var wsh = new ActiveXObject("WScript.Shell");
+    var myExe = "\"D:\\Develop\\ImageGet\\ImageGet\\bin\\Debug\\ImageGet.exe\" ";
+    wsh.run(myExe + arg, 8, false);
+</script>
